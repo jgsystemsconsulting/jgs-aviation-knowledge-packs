@@ -1,0 +1,12 @@
+{
+  "name": "Aviation",
+  "description": "JG Systems Consulting catalogue of licence-vetted Aviation knowledge-pack skills for coding agents.",
+  "owner": { "name": "JG Systems Consulting Ltd.", "url": "https://github.com/jgsystemsconsulting/jgs-aviation-knowledge-packs" },
+  "plugins": [
+    {
+      "name": "aviation",
+      "source": "./",
+      "description": "Installable Aviation knowledge packs reconstructed from open sources."
+    }
+  ]
+}

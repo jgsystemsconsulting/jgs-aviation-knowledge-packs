@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "repository": "jgs-aviation-knowledge-packs",
+  "sector_slug": "aviation",
+  "scope": "Aviation",
+  "version": "0.1.0",
+  "updated": "2026-09-24",
+  "packs": [],
+  "planned": []
+}
