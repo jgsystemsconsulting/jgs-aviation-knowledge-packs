@@ -72,7 +72,7 @@ This list exists so the repo never ships something that triggers a takedown.
 | Source | Why excluded |
 |---|---|
 | **ISO 26262, IEC 61508, ISO-SAE 21434** (functional safety, functional safety of E/E systems, road-vehicle cybersecurity engineering standards) | Paywalled, all-rights-reserved; per-user licence model. Hard stop. (programme research 2026-09-24, docs/superpowers ingest bundle.) |
-| **RTCA DO-178C / DO-254, SAE ARP4754A / ARP4761** (avionics software/hardware design assurance; civil aircraft systems development and safety assessment) | Paywalled; no redistribution or derivative grant. (programme research 2026-09-24, docs/superpowers ingest bundle.) |
+| **RTCA DO-178C / DO-254 and supplements DO-330 to DO-333; EUROCAE ED-12C / ED-80; SAE ARP4754B / ARP4761A** (avionics software/hardware design assurance; civil aircraft systems development and safety assessment; tool qualification and technology supplements) | Paywalled; no redistribution or derivative grant. Editions moved to the current B/A letters per build-confirm (programme research and aviation sector build 2026-09-24/25). |
 | **ECSS standards (ESA/European space)** | Free download from ecss.nl but © ESA; "No ECSS document may be reproduced in any form without the explicit consent of ESA" (ECSS-P-00C §5.8). A pack is reproduction + derivative work. Carried from the exemplar vetting. (programme research 2026-09-24, docs/superpowers ingest bundle.) |
 | **Def Stan documents (UK defence standards)** | Case-by-case: Crown copyright, downloads free of charge but registration-gated via the DSTAN portal. **Def Stan 00-051 is UNVERIFIED** pending a registered DSTAN user recording the cover licence statement; excluded until then. If OGL v3.0 applies inside the document → Tier 2; if bespoke MOD-consent/no-reproduction terms → stays Excluded. (programme research 2026-09-24, docs/superpowers ingest bundle.) |
 | **IMO conventions and class-society rules** (e.g. SOLAS, MARPOL, classification society rule sets) | Paywalled or unclear reuse terms; no redistribution/derivative grant identified. (programme research 2026-09-24, docs/superpowers ingest bundle.) |
@@ -110,6 +110,10 @@ For industry families in this table, the per-document capture rule (including th
 ## Cleared families (programme research 2026-09-24)
 
 tier-1 US federal publisher works cleared for sector use (FDA, NHTSA, NRC, FAA orders); tier-2 gov.uk OGL JSPs, per-document capture.
+
+| Source set | Basis |
+|---|---|
+| **FAA airborne software and hardware approval reference set S1-S3** (FAA Order 8110.49A Software Approval Guidelines, 2018-03-29; AC 20-115D Airborne Software Development Assurance Using EUROCAE ED-12 and RTCA DO-178, 2017-07-21; AC 20-152A Development Assurance for Airborne Electronic Hardware, 2022-10-07) | US Government works, 17 U.S.C. § 105. Cleared Tier 1 for the faa-8110-49 pack (aviation sector build 2026-09-25). |
 
 Sector builds start from this explicit allowlist; anything not listed still goes through
 the tiers above.

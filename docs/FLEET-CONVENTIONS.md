@@ -81,3 +81,22 @@ A sector earns its own repo when a single gate-green instantiation has all of:
 Below the bar the sector stays in programme backlog. Holding options are a
 backlog row and, once the hub exists, a hub README mention. No empty repos and no
 single-signpost-only forks.
+
+## Bumping gate constants
+
+When the live catalogue changes chapter counts, cluster minimums, or the expected
+signpost list, pin the new values at all five sites in one commit:
+
+1. Twin Python constant in `tooling/check_capability_map.py` (`THRESHOLDS`) and the
+   matching constant in `tooling/generate_capability_map.py` (`EXPECTED_NOTES_COUNT`,
+   chapters plus support files).
+2. Comment pin in `.github/workflows/validate.yml` (the THRESHOLDS line CI greps).
+3. Assignment pin in `.github/workflows/validate.yml` (the live `THRESHOLDS = {...}`
+   used by the inlined checker).
+4. Runtime assert / expected_signposts pin in `tooling/check_classification_rules.py`.
+5. `EMPTY_TREE_PAIR` (and any related pairs) in `tooling/test_ci_gate.py`.
+
+Before committing a pin edit, run `python -m py_compile tooling/test_ci_gate.py`, then
+`python tooling/test_ci_gate.py` and `python tooling/check_release.py`. A miss at any
+one site fails CI parity or the local gate. The sector-repo template is not updated by
+a sector flip; only the minted repo carries the live pins.

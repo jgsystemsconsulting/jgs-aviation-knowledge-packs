@@ -1,0 +1,33 @@
+{
+  "name": "jgs-aviation-knowledge-packs",
+  "displayName": "JGS Aviation Knowledge Packs",
+  "description": "Licence-vetted aviation knowledge-pack skills reconstructed from genuinely open, commercially-redistributable sources (FAA public-domain guidance). Ask a topic; the agent reads the right chapter and answers from reference notes, not a hazy recollection.",
+  "version": "0.1.0",
+  "author": {
+    "name": "JG Systems Consulting Ltd."
+  },
+  "homepage": "https://github.com/jgsystemsconsulting/jgs-aviation-knowledge-packs",
+  "repository": "https://github.com/jgsystemsconsulting/jgs-aviation-knowledge-packs",
+  "license": "MIT",
+  "keywords": [
+    "aviation",
+    "knowledge-packs",
+    "agent-skills",
+    "faa",
+    "avionics",
+    "software-assurance",
+    "airborne-electronic-hardware",
+    "certification"
+  ],
+  "category": "developer-tools",
+  "tags": [
+    "aviation",
+    "reference",
+    "skills"
+  ],
+  "skills": [
+    "./packs/aviation/SKILL.md",
+    "./packs/faa-8110-49/SKILL.md",
+    "./packs/avionics-signpost/SKILL.md"
+  ]
+}

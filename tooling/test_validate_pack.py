@@ -10,6 +10,7 @@ built in a temp dir; the live tree is only read (case 9), never mutated.
 """
 from __future__ import annotations
 
+import re
 import sys
 import tempfile
 from pathlib import Path
@@ -125,13 +126,25 @@ def main() -> int:
         errs = validate_pack.check_pack(orch_np)
         assert errs == ["missing PACK.yaml"], errs
 
-    # (9) the live tree is orchestrator-only: the stub pack passes and zero
-    # live content packs exist (read-only)
+    # (9) the live tree carries the orchestrator stub plus the flipped
+    # content pack (read-only). Signpost dirs are excluded from this pin
+    # (orchestrator + content packs only; see P2 retarget precedent).
     live = REPO_ROOT / "packs" / "aviation"
     assert live.is_dir(), f"live orchestrator pack missing: {live}"
     assert validate_pack.check_pack(live) == [], validate_pack.check_pack(live)
-    live_slugs = sorted(p.name for p in (REPO_ROOT / "packs").iterdir() if p.is_dir())
-    assert live_slugs == ["aviation"], live_slugs
+
+    def _is_signpost(d: Path) -> bool:
+        skill = d / "SKILL.md"
+        if not skill.is_file():
+            return False
+        body = skill.read_text(encoding="utf-8", errors="ignore")
+        return bool(re.search(r"^kind:\s*signpost\s*$", body, re.M))
+
+    live_slugs = sorted(
+        p.name for p in (REPO_ROOT / "packs").iterdir()
+        if p.is_dir() and not _is_signpost(p)
+    )
+    assert live_slugs == ["aviation", "faa-8110-49"], live_slugs
 
     print("validate_pack tests: OK")
     return 0
