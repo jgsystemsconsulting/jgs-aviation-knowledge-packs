@@ -1101,19 +1101,19 @@ jobs:
           GENERATED_ON_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
           fails = 0
 
-          # Empty-tree constant pins (Task 5 twin values). Byte-identical
+          # Live-catalogue constant pins (Task 4 twin values). Byte-identical
           # assignment forms must appear here and in the local twins so
           # tooling/test_ci_gate.py EMPTY_TREE_PAIR can catch drift the same
           # way ROUTING_MAP_PAIR pins routing literals. Runtime asserts keep
           # the pin values honest inside this self-contained gate.
-          # THRESHOLDS: dict[str, int] = {}  # empty-tree: zero-tolerant name-keyed minimums
-          # EXPECTED_NOTES_COUNT = 0
-          # expected_signposts: list[str] = []
-          THRESHOLDS = {}
-          EXPECTED_NOTES_COUNT = 0
-          expected_signposts = []
-          if THRESHOLDS != {} or EXPECTED_NOTES_COUNT != 0 or list(expected_signposts) != []:
-              print(f"::error::[map-data] empty-tree constant pin drift "
+          # THRESHOLDS: dict[str, int] = {"Certification Liaison & Oversight": 6, "Software Development Assurance": 2, "Airborne Electronic Hardware": 4}  # live catalogue: name-keyed chapter minimums
+          # EXPECTED_NOTES_COUNT = 12
+          # expected_signposts: list[str] = ["avionics-signpost"]
+          THRESHOLDS = {"Certification Liaison & Oversight": 6, "Software Development Assurance": 2, "Airborne Electronic Hardware": 4}
+          EXPECTED_NOTES_COUNT = 12
+          expected_signposts = ["avionics-signpost"]
+          if THRESHOLDS != {"Certification Liaison & Oversight": 6, "Software Development Assurance": 2, "Airborne Electronic Hardware": 4} or EXPECTED_NOTES_COUNT != 12 or list(expected_signposts) != ["avionics-signpost"]:
+              print(f"::error::[map-data] live-catalogue constant pin drift "
                     f"(THRESHOLDS={THRESHOLDS!r} EXPECTED_NOTES_COUNT={EXPECTED_NOTES_COUNT!r} "
                     f"expected_signposts={expected_signposts!r})")
               fails += 1
