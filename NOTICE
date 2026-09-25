@@ -19,17 +19,29 @@ This product contains two separately licensed layers:
 Third-party source attributions (one block per shipped content pack)
 -----------------------------------------------------------------------------------
 
-<!-- TEMPLATE PLACEHOLDER: the template ships no pack content. When a pack is ported
-     or created, append one attribution block here in the exemplar format:
+[pack: faa-8110-49]
+  Source : FAA Order 8110.49A, Software Approval Guidelines + AC 20-115D
+           (Airborne Software Development Assurance) + AC 20-152A (RTCA
+           Document DO-254, Design Assurance Guidance for Airborne
+           Electronic Hardware)
+  Author : US Federal Aviation Administration (FAA)
+  Licence: Public Domain -- US Government work (17 U.S.C. 105)
+  Changes: reconstructed as synthesized reference notes (not a reproduction)
+  Terms  : public domain, no copyright. The Order and Advisory Circulars NAME
+           third-party standards (RTCA DO-178C/DO-254 and companions) that
+           remain the copyright of RTCA, EUROCAE, and SAE -- this pack
+           reproduces NONE of those standards, only synthesized notes that
+           name them and describe how the FAA applies them. Attribution to
+           the FAA is courtesy, not obligation; the FAA does not endorse this
+           pack. See packs/faa-8110-49/LICENSE.
 
-[pack: <slug>]
-  Source : <full source title, version, and identifier>
-  Author : <publishing organisation>
-  Licence: <licence name and URL, or public-domain basis>
-  Changes: <how the pack relates to the source>
-  Terms  : <binding conditions and caveats, ending with a pointer to
-            packs/<slug>/LICENSE>
--->
+-----------------------------------------------------------------------------------
+Trademark note: RTCA, EUROCAE, and SAE names, and the designations of their
+standards (e.g. DO-178C, DO-254, ARP4754A), are referenced by name only to
+identify the cited standards; no endorsement by, or affiliation with, those
+bodies is claimed or implied. The standards themselves are paywalled and are
+not reproduced in this repository.
+-----------------------------------------------------------------------------------
 
 -----------------------------------------------------------------------------------
 The build pipeline uses the jgs-reference-skill extraction engine (MIT License,

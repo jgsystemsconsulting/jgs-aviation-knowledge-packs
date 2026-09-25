@@ -8,13 +8,17 @@ SPDX-License-Identifier: MIT
 <p align="center">
   <img src="https://img.shields.io/badge/license-MIT%20(tooling)-blue" alt="License: MIT (tooling)">
   <img src="https://img.shields.io/badge/version-0.1.0-green" alt="Version 0.1.0">
-  <img src="https://img.shields.io/badge/type-template-orange" alt="Template repository">
 </p>
 
 <p align="center">
-  <strong>Starting point for a sector knowledge-pack catalogue. This repository is a
-  TEMPLATE: it is not installed as packs. Mint your own sector repo from it.
-  (Minted repos: replace this section with your catalogue introduction.)</strong>
+  <strong>An installable catalogue of knowledge-pack skills for coding agents that
+  build aviation software and hardware approvals. The faa-8110-49 pack distills 3
+  FAA sources into reference notes covering the FAA software approval review
+  process (Order 8110.49A), DO-178C/DO-254 development assurance practice, and
+  conformity inspection; the /aviation orchestrator routes free-text sector
+  questions to the right pack. This catalogue provides engineering knowledge,
+  not legal or regulatory advice; it signposts, but does not reproduce, the
+  paywalled RTCA/EUROCAE/SAE standards; an EASA guidance pack is forthcoming.</strong>
 </p>
 
 **Copyright (c) 2026 JG Systems Consulting Ltd. - MIT License (tooling); pack content under each source's own licence (see [NOTICE](NOTICE)).**
@@ -23,71 +27,38 @@ SPDX-License-Identifier: MIT
 
 ## What it is
 
-This repo is the source template for the industry knowledge-pack fleet: one repo per
-engineering sector, each an installable catalogue of knowledge-pack skills for coding
-agents, with a single orchestrator that routes free-text sector questions to the right
-packs. The template carries the legal root, the pack specification, the validators and
-CI gates, and the installer, so a minted repo starts compliant and gated.
+This repo is an installable catalogue of knowledge-pack skills for coding agents
+that build avionics software and hardware seeking FAA approval. Each pack
+distills vetted public sources into reference notes an agent can load on demand,
+and a single orchestrator routes free-text sector questions to the right pack.
+Pack structure follows [docs/PACK-SPEC.md](docs/PACK-SPEC.md); usage guidance
+for agents is in [docs/skill-usage.md](docs/skill-usage.md).
 
-Minting copies the tree, substitutes four identity tokens (`aviation`,
-`Aviation`, `aviation`, `jgs-aviation-knowledge-packs`) in file contents and path names,
-and refuses to finish if any token survives in the output. Fleet-wide naming, layout,
-and release rules: [docs/FLEET-CONVENTIONS.md](docs/FLEET-CONVENTIONS.md).
+## Install
 
-## How to mint
+Preview what would be installed and where, then install:
 
 ```bash
-python tooling/instantiate.py --sector <slug> --name "<name>" --orch <slug> --target <path>
-```
-
-- `--sector`: short sector slug (lowercase, hyphenated, e.g. `med-device`). Sets
-  `aviation` and the repo name `jgs-<sector>-knowledge-packs`.
-- `--name`: sector display name (e.g. `"Medical Device"`). Sets `Aviation`.
-- `--orch`: orchestrator command slug (e.g. `med`). Sets `aviation`; users type
-  `/<orch> <question>` after install.
-- `--target`: destination directory. It must not already exist or must be empty.
-
-Options:
-
-- `--add-host HOST` (repeatable): adds a link-policy host to
-  `tooling/link-policy-hosts.txt` and the trusted inline set in
-  `.github/workflows/validate.yml` in one step. Use it when your sector's vetted
-  sources live on a host the template does not already list.
-- `--dry-run`: prints the full plan (files, token hits, host additions) and writes
-  nothing.
-
-After a successful mint:
-
-```bash
-cd <path>
-git init -b main && git add -A && git commit -m "chore: mint from sector-repo template"
 python install.py --dry-run
+python install.py
 ```
 
-## What the template carries
+`install.py` targets Claude by default. Use `--agent <name>` for another supported
+agent or `--agent all`, and `--list-agents` to see every target. Transform-style
+agents get the SKILL.md index inlined into a single file (see the note in
+`install.py --help`).
 
-- **Legal root:** [LICENSE](LICENSE) (MIT, tooling and scaffolding only),
-  [NOTICE](NOTICE), [COPYRIGHT](COPYRIGHT), [SECURITY.md](SECURITY.md),
-  [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md), [CONTRIBUTING.md](CONTRIBUTING.md),
-  [CITATION.cff](CITATION.cff).
-- **Spec docs:** [docs/PACK-SPEC.md](docs/PACK-SPEC.md) (the pack contract),
-  [docs/SOURCE-VETTING.md](docs/SOURCE-VETTING.md) (source eligibility and tiers),
-  [docs/LICENSING.md](docs/LICENSING.md) (two-layer licence model and the link
-  policy), [docs/skill-usage.md](docs/skill-usage.md), and
-  [docs/FLEET-CONVENTIONS.md](docs/FLEET-CONVENTIONS.md) (fleet rules every minted
-  repo ships).
-- **Validators:** `tooling/validate_pack.py` (pack structure), `tooling/build_pack.py`,
-  `tooling/check_release.py` (release gate), plus capability-map, classification, and
-  overlap checks.
-- **CI:** [.github/workflows/validate.yml](.github/workflows/validate.yml), kept in
-  parity with the local gate by `tooling/test_ci_gate.py`.
-- **Installer:** `install.py` / `install.sh` / `install.ps1` with a host-parity guard
-  (`tooling/test_install_guard.py`).
-- **Orchestrator stub:** `packs/aviation/`, an explicit `/<orch> <question>`
-  router that carries no source content; point its routing map at your packs.
-- **Empty catalogue stubs:** [SKILLS.md](SKILLS.md), [catalog.json](catalog.json),
-  `docs/packs.html`, [CHANGELOG.md](CHANGELOG.md), [RELEASE-INFO.txt](RELEASE-INFO.txt)
-  at version 0.1.0.
+## Use
+
+- `/aviation <question>`: the orchestrator. Ask in free text; it routes to the
+  right pack.
+- `/faa-8110-49`: the FAA review-process pack, loaded directly when you already
+  know you need it.
+- `/avionics-signpost`: routes to the standards signpost pack (RTCA DO-178C /
+  DO-254 and related standards, named by designation with links to the
+  publishers' pages, not reproduced).
+- Packs are plain Markdown skills: open any `packs/<slug>/SKILL.md` to read the
+  reference notes without installing anything.
 
 ## Gates
 
@@ -101,17 +72,8 @@ python tooling/test_ci_gate.py          # proves CI (.github/workflows/validate.
 
 CI green is not release-ready: `check_release.py` is the pre-tag gate. It prints a
 `RELEASE CHECK: PASS (v<version> @ <sha>)` receipt; run it before tagging and confirm
-the sha matches the commit you tag. A minted repo is release-ready only when all three
-gates exit 0 (see the mint bar in [docs/FLEET-CONVENTIONS.md](docs/FLEET-CONVENTIONS.md)).
-
-## Smoke proof
-
-```bash
-python tooling/test_instantiate.py
-```
-
-Mints a throwaway sector into a temp directory and runs all three gates against the
-minted output, then asserts zero token residue. Exits 0 with `SMOKE PROOF PASS`.
+the sha matches the commit you tag. The repo is release-ready only when all three
+gates exit 0.
 
 ## Licence
 

@@ -15,4 +15,5 @@ All notable changes to this project are documented here. Format follows
 
 ### Added
 
-- Template initialised from jgs-se-knowledge-packs.
+- Initial public release: faa-8110-49 knowledge pack (3 FAA sources),
+  avionics-signpost, and /aviation orchestrator.
