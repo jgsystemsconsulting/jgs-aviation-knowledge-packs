@@ -12,7 +12,7 @@ Software conformity inspection is how the FAA confirms that the software article
 
 - **Two conformity means.** (1) Software part conformity inspection for each test conducted for certification credit. (2) Software installation conformity inspection whenever an FAA aircraft-level ground or certification flight test is performed (for example under a TIA).
 
-- **ASE then ASI split.** The Airborne Software Expert (ASE) establishes baseline and test-configuration facts, then initiates FAA Form 8120-10, Request for Conformity, so Manufacturing Inspection District/Satellite Office (MIDO/MISO) staff (the ASI) can witness or verify the build, load, and setup steps.
+- **ASE then ASI split.** The Aviation Safety Engineer (ASE) establishes baseline and test-configuration facts, then initiates FAA Form 8120-10, Request for Conformity, so Manufacturing Inspection District/Satellite Office (MIDO/MISO) staff (the ASI) can witness or verify the build, load, and setup steps.
 
 - **Certification-credit test definition.** A system certification test run under an FAA-approved test plan to show regulatory compliance. That approved test plan is not the DO-178B Software Verification Plan. Examples include DO-160D environmental qualification, system functional and integration tests, aircraft ground functional tests, and TIA flight tests.
 
