@@ -71,14 +71,27 @@ Output goes in the reply unless the user names a file. A deliverable with no mat
 ### Topics
 | Topic | Keywords | Packs (best first) |
 |---|---|---|
+| Software approval & review process | software review, Order 8110.49A, 8110.49, desk review, on-site review, review planning arrangements, certification liaison, designee, review objectives, software approval | `faa-8110-49` |
+| Level of FAA involvement | LOI, level of involvement, involvement worksheet, worksheet scoring, TSR, how much FAA involvement, review depth | `faa-8110-49` |
+| Software conformity inspection | conformity inspection, conformity, Form 8120-10, part conformity, installation conformity, ASE, ASI, MIDO, Form 8110-3, type design | `faa-8110-49` |
+| DO-178C recognition, supplements & tool qualification | DO-178C, ED-12C, AC 20-115D, DO-330, DO-331, DO-332, DO-333, supplement, tool qualification, TQL, DO-178B transition, life cycle data, model-based development, object-oriented technology, formal methods | `faa-8110-49`, `avionics-signpost` |
+| Legacy software, FLS & UMS | legacy software, field-loadable software, FLS, user-modifiable software, UMS, DO-178A, usage history, legacy modification flow chart | `faa-8110-49` |
+| Airborne electronic hardware & DO-254 | AEH, DO-254, ED-80, AC 20-152A, custom device, FPGA, PLD, ASIC, simple versus complex device, HDL code coverage, robustness, previously developed hardware, PHAC | `faa-8110-49`, `avionics-signpost` |
+| COTS devices, COTS IP & CBAs | COTS, COTS IP, soft IP, firm IP, hard IP, circuit board assembly, CBA, complexity assessment, electronic component management, microcode, errata | `faa-8110-49` |
+| System development & safety assessment standards | ARP4754, ARP4761, system development guidelines, safety assessment, aircraft-level development, standard designation, standard edition, paywalled standard, where to buy a standard | `avionics-signpost` |
 
 ### Agency contexts
 | Agency | Keywords | Packs |
 |---|---|---|
+| FAA | FAA, AIR, TSO, TSOA, type certification, US, Federal Aviation Administration | `faa-8110-49`, `avionics-signpost` |
 
 ### Deliverables
 | Deliverable | Keywords | Draft | Review | Verify |
 |---|---|---|---|---|
+| Software review planning agenda | review agenda, review planning, on-site arrangements, desk review plan, review objectives | `faa-8110-49` | `faa-8110-49` | `faa-8110-49` |
+| LOI assessment record | LOI record, involvement worksheet, worksheet scoring, involvement determination | `faa-8110-49` | `faa-8110-49` | `faa-8110-49` |
+| Software conformity inspection checklist | conformity checklist, Form 8120-10 request, part conformity record, installation conformity record, ASI witness list | `faa-8110-49` | `faa-8110-49` | `faa-8110-49` |
+| AEH simple/complex classification record | simple/complex classification, custom device classification, CD-1 justification, PHAC classification record | `faa-8110-49` | `faa-8110-49` | `faa-8110-49` |
 
 ### Licences
 | Pack | Licence |
@@ -109,6 +122,7 @@ noted and skipped; if none remain, fall back to route-only.
 
 - No Aviation claim without a citation from a pack file read this session.
 - The map is curated, not exhaustive. Agency rows are a filter, not an endorsement.
+- EASA AMC 20-115D and AMC 20-152A equivalents exist free through the EASA Easy Access Rules (AMC-20) volume; easa-rules is planned and not in the catalogue, so `/aviation` names the gap, points EASA-specific standard lookups at the avionics-signpost Free regulator paths row, and makes no EASA claims.
 - At most six packs per Topics row. At most four packs read per answer.
 - Deliverable stage chains come only from Deliverables rows; empty cells skip that stage.
 - `/aviation` never overwrites an existing file without a yes at a gate.
