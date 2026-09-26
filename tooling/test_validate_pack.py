@@ -144,7 +144,7 @@ def main() -> int:
         p.name for p in (REPO_ROOT / "packs").iterdir()
         if p.is_dir() and not _is_signpost(p)
     )
-    assert live_slugs == ["aviation", "faa-8110-49"], live_slugs
+    assert live_slugs == ["aviation", "easa-rules", "faa-8110-49"], live_slugs
 
     print("validate_pack tests: OK")
     return 0

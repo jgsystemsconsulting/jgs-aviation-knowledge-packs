@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "map_version": "0.1.0",
-  "generated_on": "2026-09-25",
+  "map_version": "0.2.0",
+  "generated_on": "2026-09-26",
   "rules_of_construction": [
     "Every chapter in every pack under packs/<slug>/chapters/ is assigned to exactly one capability cluster (best fit).",
     "Cross-cutting chapters carry a remark noting the strong secondary fit.",
@@ -93,6 +93,60 @@
     {
       "pack": "faa-8110-49",
       "chapter": "ch10-cots-devices-and-cbas.md",
+      "cluster": "Airborne Electronic Hardware",
+      "is_support": false
+    },
+    {
+      "pack": "easa-rules",
+      "chapter": "ch01-moc-map.md",
+      "cluster": "Certification Liaison & Oversight",
+      "is_support": false
+    },
+    {
+      "pack": "easa-rules",
+      "chapter": "ch07-joint-sw-aeh-workflow.md",
+      "cluster": "Certification Liaison & Oversight",
+      "is_support": false
+    },
+    {
+      "pack": "easa-rules",
+      "chapter": "glossary.md",
+      "cluster": "Certification Liaison & Oversight",
+      "is_support": true
+    },
+    {
+      "pack": "easa-rules",
+      "chapter": "cheatsheet.md",
+      "cluster": "Certification Liaison & Oversight",
+      "is_support": true
+    },
+    {
+      "pack": "easa-rules",
+      "chapter": "ch02-amc-20-115d-scope.md",
+      "cluster": "Software Development Assurance",
+      "is_support": false
+    },
+    {
+      "pack": "easa-rules",
+      "chapter": "ch03-software-assurance-115d.md",
+      "cluster": "Software Development Assurance",
+      "is_support": false
+    },
+    {
+      "pack": "easa-rules",
+      "chapter": "ch04-transition-tools-gm.md",
+      "cluster": "Software Development Assurance",
+      "is_support": false
+    },
+    {
+      "pack": "easa-rules",
+      "chapter": "ch05-amc-20-152a-scope.md",
+      "cluster": "Airborne Electronic Hardware",
+      "is_support": false
+    },
+    {
+      "pack": "easa-rules",
+      "chapter": "ch06-aeh-objectives.md",
       "cluster": "Airborne Electronic Hardware",
       "is_support": false
     }

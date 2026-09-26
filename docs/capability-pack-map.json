@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "map_version": "0.1.0",
-  "generated_on": "2026-09-25",
+  "map_version": "0.2.0",
+  "generated_on": "2026-09-26",
   "clusters": [
     {
       "name": "Certification Liaison & Oversight",
@@ -35,6 +35,26 @@
           "pack": "faa-8110-49",
           "chapter": "cheatsheet.md (support file)",
           "note": "Cross-chapter decision checklists for software review, LOI, conformity, and AEH questions"
+        },
+        {
+          "pack": "easa-rules",
+          "chapter": "ch01-moc-map.md",
+          "note": "Where the means of compliance lives: EASA AMC-20, the paywalled RTCA/EUROCAE text, and the FAA AC twin"
+        },
+        {
+          "pack": "easa-rules",
+          "chapter": "ch07-joint-sw-aeh-workflow.md",
+          "note": "Joint software and AEH certification workflow; AMC 20-189 named, not fetched"
+        },
+        {
+          "pack": "easa-rules",
+          "chapter": "glossary.md (support file)",
+          "note": "EASA software and AEH terms used across the easa-rules chapters"
+        },
+        {
+          "pack": "easa-rules",
+          "chapter": "cheatsheet.md (support file)",
+          "note": "Decision tree routing software, AEH, and multi-core questions to the right easa-rules chapter"
         }
       ]
     },
@@ -50,6 +70,21 @@
           "pack": "faa-8110-49",
           "chapter": "ch06-legacy-software-fls-ums.md",
           "note": "Supplements, field-loadable and user-modifiable software, and legacy software modification flow"
+        },
+        {
+          "pack": "easa-rules",
+          "chapter": "ch02-amc-20-115d-scope.md",
+          "note": "AMC 20-115D applicability: product certification, ETSO software, and what replacing AMC 20-115C changed"
+        },
+        {
+          "pack": "easa-rules",
+          "chapter": "ch03-software-assurance-115d.md",
+          "note": "Software assurance as AMC 20-115D frames it, without a DO-178C objective dump"
+        },
+        {
+          "pack": "easa-rules",
+          "chapter": "ch04-transition-tools-gm.md",
+          "note": "GM1 to GM3 (CIA, coupling, error handling) and the tool-qualification pointer, name-only"
         }
       ]
     },
@@ -75,6 +110,16 @@
           "pack": "faa-8110-49",
           "chapter": "ch10-cots-devices-and-cbas.md",
           "note": "COTS device complexity assessment and circuit board assembly development assurance"
+        },
+        {
+          "pack": "easa-rules",
+          "chapter": "ch05-amc-20-152a-scope.md",
+          "note": "AMC 20-152A applicability: AEH at DAL A, B, and C, and what the AMC adds beyond ED-80/DO-254"
+        },
+        {
+          "pack": "easa-rules",
+          "chapter": "ch06-aeh-objectives.md",
+          "note": "Custom devices, COTS IP, COTS devices, and CBAs, as original summaries of the AMC objectives"
         }
       ]
     }

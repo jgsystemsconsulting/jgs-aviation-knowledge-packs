@@ -3,8 +3,8 @@
   "repository": "jgs-aviation-knowledge-packs",
   "sector_slug": "aviation",
   "scope": "Aviation",
-  "version": "0.1.0",
-  "updated": "2026-09-25",
+  "version": "0.2.0",
+  "updated": "2026-09-26",
   "packs": [
     {
       "slug": "faa-8110-49",
@@ -16,17 +16,18 @@
       "commercial_use": true,
       "chapters": 10,
       "status": "live"
-    }
-  ],
-  "planned": [
+    },
     {
       "slug": "easa-rules",
-      "title": "EASA AMC 20-115D / AMC 20-152A and related Easy Access Rules AMC-20 guidance - planned second run (b-27)",
-      "publisher": "European Union Aviation Safety Agency (per-document vetting)",
-      "license": "TBD per document (tier 2/3)",
+      "title": "EASA AMC 20-115D and AMC 20-152A (airborne software and AEH development assurance)",
+      "publisher": "European Union Aviation Safety Agency; reconstructed by JG Systems Consulting Ltd",
+      "source_version": "S1 AMC 20-115D (ED Decision 2017/020/R, AMC-20 Amendment 14; consolidated in Amendment 23); S2 AMC 20-152A (ED Decision 2020/010/R, AMC-20 Amendment 19; consolidated in Amendment 23); S3 EAR AMC-20 Amendment 23 (June 2023) as retrieval carrier; S5/S6 decision anchors. Pinned 2026-09-26.",
+      "license": "Per-document: EASA site reproduction-with-acknowledgement grant, qualified by ED Decision all-rights-reserved footers; reconstructed notes with attribution; official PDFs not redistributed; commercial use pending per-document determination",
       "license_tier": 2,
       "commercial_use": false,
-      "status": "planned"
+      "chapters": 7,
+      "status": "live"
     }
-  ]
+  ],
+  "planned": []
 }

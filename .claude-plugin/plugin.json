@@ -1,7 +1,7 @@
 {
   "name": "aviation",
   "description": "Licence-vetted Aviation knowledge-pack skills for coding agents, reconstructed from genuinely open sources. Tooling MIT; pack content under each source's own licence.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": {
     "name": "JG Systems Consulting Ltd."
   },

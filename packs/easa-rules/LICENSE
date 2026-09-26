@@ -120,17 +120,17 @@ covered by this file.
 ---------------------
 
 S1
-    Title: AMC 20-115D, Airborne Software Development Assurance Using EUROCAE
+Title: AMC 20-115D, Airborne Software Development Assurance Using EUROCAE
         ED-12 and RTCA DO-178
-    Version: ED Decision 2017/020/R (AMC-20 Amendment 14), read as consolidated
+Version: ED Decision 2017/020/R (AMC-20 Amendment 14), read as consolidated
         in AMC-20 Amendment 23 (June 2023)
-    Pages: section slice, page pins listed: EAR pp. 416-430; GM1 pin at p. 428,
+Pages: section slice, page pins listed: EAR pp. 416-430; GM1 pin at p. 428,
         GM2 and GM3 pin at p. 429
-    URL: https://www.easa.europa.eu/en/document-library/agency-decisions/ed-decision-2017020r
-    Licence: per-document (see section 4); reproduction with acknowledgement
+URL: https://www.easa.europa.eu/en/document-library/agency-decisions/ed-decision-2017020r
+Licence: per-document (see section 4); reproduction with acknowledgement
         unless otherwise stated, qualified by the decision PDF's all-rights-
         reserved footer; commercial use pending per-document determination
-    Attribution: Source: European Union Aviation Safety Agency, AMC 20-115D,
+Attribution: Source: European Union Aviation Safety Agency, AMC 20-115D,
         https://www.easa.europa.eu/en/document-library/agency-decisions/ed-decision-2017020r.
         Licence basis: EASA copyright page authorises reproduction with
         acknowledgement unless otherwise stated; ED Decision PDFs reserve all
@@ -139,22 +139,22 @@ S1
         Changes: reconstructed as reference notes; restructuring and
         paraphrase are the changes. Not an official EASA text. EASA does not
         endorse this pack.
-    Used in: ch01, ch02, ch03, ch04, ch07
+Used in: ch01, ch02, ch03, ch04, ch07
 
 S2
-    Title: AMC 20-152A, Development Assurance for Airborne Electronic Hardware
-    Version: ED Decision 2020/010/R (AMC-20 Amendment 19), read as consolidated
+Title: AMC 20-152A, Development Assurance for Airborne Electronic Hardware
+Version: ED Decision 2020/010/R (AMC-20 Amendment 19), read as consolidated
         in AMC-20 Amendment 23 (June 2023)
-    Pages: section slice, page pins listed: EAR pp. 497-517. Appendices A-C
+Pages: section slice, page pins listed: EAR pp. 497-517. Appendices A-C
         pin: the Amendment 23 carrier carries no discrete appendix sections
         (verified at source capture); the section's Appendix lines are in-body
         references to ED-80/DO-254 Appendices A and B, and they stay inside the
         slice
-    URL: https://www.easa.europa.eu/en/document-library/agency-decisions/ed-decision-2020010r
-    Licence: per-document (see section 4); reproduction with acknowledgement
+URL: https://www.easa.europa.eu/en/document-library/agency-decisions/ed-decision-2020010r
+Licence: per-document (see section 4); reproduction with acknowledgement
         unless otherwise stated, qualified by the decision PDF's all-rights-
         reserved footer; commercial use pending per-document determination
-    Attribution: Source: European Union Aviation Safety Agency, AMC 20-152A,
+Attribution: Source: European Union Aviation Safety Agency, AMC 20-152A,
         https://www.easa.europa.eu/en/document-library/agency-decisions/ed-decision-2020010r.
         Licence basis: EASA copyright page authorises reproduction with
         acknowledgement unless otherwise stated; ED Decision PDFs reserve all
@@ -163,19 +163,19 @@ S2
         Changes: reconstructed as reference notes; restructuring and
         paraphrase are the changes. Not an official EASA text. EASA does not
         endorse this pack.
-    Used in: ch01, ch05, ch06, ch07
+Used in: ch01, ch05, ch06, ch07
 
 S3
-    Title: Easy Access Rules for Acceptable Means of Compliance for
+Title: Easy Access Rules for Acceptable Means of Compliance for
         Airworthiness of Products, Parts and Appliances (AMC-20)
-    Version: Amendment 23, published June 2023
-    Pages: carrier, not ingested whole (605 pp); recorded start pages:
+Version: Amendment 23, published June 2023
+Pages: carrier, not ingested whole (605 pp); recorded start pages:
         AMC 20-115D starts p. 416, AMC 20-152A starts p. 497
-    URL: https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-acceptable-means-compliance-airworthiness
-    Licence: per-document (see section 4 and the EAR disclaimer in section 7);
+URL: https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-acceptable-means-compliance-airworthiness
+Licence: per-document (see section 4 and the EAR disclaimer in section 7);
         marked not an official publication; commercial use pending
         per-document determination
-    Attribution: Source: European Union Aviation Safety Agency, Easy Access
+Attribution: Source: European Union Aviation Safety Agency, Easy Access
         Rules for Acceptable Means of Compliance for Airworthiness of Products,
         Parts and Appliances (AMC-20),
         https://www.easa.europa.eu/en/document-library/easy-access-rules/easy-access-rules-acceptable-means-compliance-airworthiness.
@@ -186,17 +186,17 @@ S3
         Changes: reconstructed as reference notes; restructuring and
         paraphrase are the changes. Not an official EASA text. EASA does not
         endorse this pack.
-    Used in: carrier for S1 and S2; no chapter body
+Used in: carrier for S1 and S2; no chapter body
 
 S5
-    Title: ED Decision 2017/020/R
-    Version: of 19 October 2017 (creates AMC 20-115D; AMC-20 Amendment 14)
-    Pages: anchor, not chapter body (2 pp)
-    URL: https://www.easa.europa.eu/en/document-library/agency-decisions/ed-decision-2017020r
-    Licence: per-document (see section 4); decision PDF footer reserves all
+Title: ED Decision 2017/020/R
+Version: of 19 October 2017 (creates AMC 20-115D; AMC-20 Amendment 14)
+Pages: anchor, not chapter body (2 pp)
+URL: https://www.easa.europa.eu/en/document-library/agency-decisions/ed-decision-2017020r
+Licence: per-document (see section 4); decision PDF footer reserves all
         rights; cited here for the decision number and date only; commercial
         use pending per-document determination
-    Attribution: Source: European Union Aviation Safety Agency, ED Decision
+Attribution: Source: European Union Aviation Safety Agency, ED Decision
         2017/020/R,
         https://www.easa.europa.eu/en/document-library/agency-decisions/ed-decision-2017020r.
         Licence basis: EASA copyright page authorises reproduction with
@@ -206,17 +206,17 @@ S5
         Changes: reconstructed as reference notes; restructuring and
         paraphrase are the changes. Not an official EASA text. EASA does not
         endorse this pack.
-    Used in: ch01 (cited)
+Used in: ch01 (cited)
 
 S6
-    Title: ED Decision 2020/010/R
-    Version: of 17 July 2020 (creates AMC 20-152A; AMC-20 Amendment 19)
-    Pages: anchor, not chapter body (3 pp)
-    URL: https://www.easa.europa.eu/en/document-library/agency-decisions/ed-decision-2020010r
-    Licence: per-document (see section 4); decision PDF footer reserves all
+Title: ED Decision 2020/010/R
+Version: of 17 July 2020 (creates AMC 20-152A; AMC-20 Amendment 19)
+Pages: anchor, not chapter body (3 pp)
+URL: https://www.easa.europa.eu/en/document-library/agency-decisions/ed-decision-2020010r
+Licence: per-document (see section 4); decision PDF footer reserves all
         rights; cited here for the decision number and date only; commercial
         use pending per-document determination
-    Attribution: Source: European Union Aviation Safety Agency, ED Decision
+Attribution: Source: European Union Aviation Safety Agency, ED Decision
         2020/010/R,
         https://www.easa.europa.eu/en/document-library/agency-decisions/ed-decision-2020010r.
         Licence basis: EASA copyright page authorises reproduction with
@@ -226,4 +226,4 @@ S6
         Changes: reconstructed as reference notes; restructuring and
         paraphrase are the changes. Not an official EASA text. EASA does not
         endorse this pack.
-    Used in: ch01 (cited)
+Used in: ch01 (cited)
