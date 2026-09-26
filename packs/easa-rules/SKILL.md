@@ -55,21 +55,22 @@ Beyond recognising ED-80/DO-254, AMC 20-152A adds objectives-based guidance for 
 
 ## Topic Index
 
+
 - Airborne electronic hardware applicability (DAL A, B, C) → ch05
 - AltMoC (alternative means of compliance) → ch01, ch02
 - AMC 20-115C, replacement and cancellation of → ch02
 - AMC 20-152A applicability and DAL coverage → ch05
 - CBA (circuit board assembly) objectives → ch06
-- COTS devices → ch06
 - Configuration management (software life cycle process) → ch03
+- COTS devices → ch06
 - COTS intellectual property (IP) in custom devices → ch06
 - Custom device development → ch06
 - DAL D (AMC 20-152A use not required) → ch05
 - Decision anchors (ED Decision 2017/020/R, ED Decision 2020/010/R) → ch01
 - ED-12B/DO-178B process reuse for new development → ch03
-- ETSO articles and ETSO software → ch01, ch02, ch05
 - ED-80/DO-254 recognition and supplementation → ch05
 - Error handling at design level (GM3) → ch04
+- ETSO articles and ETSO software → ch01, ch02, ch05
 - GM1 to GM3 (AMC 20-115D general clarification material) → ch04
 - Hardware/software planning interfaces (PSAC/PHAC-style) → ch07
 - Modification and reuse of previously approved software → ch03
@@ -77,7 +78,6 @@ Beyond recognising ED-80/DO-254, AMC 20-152A adds objectives-based guidance for 
 - Planning, development, verification, quality assurance (as the AMC frames them) → ch03
 - Single Event Effects (name-only pointer) → ch05, ch06
 - Tool qualification pointer (ED-12C section 12.2 / DO-330 family, name-only) → ch04
-
 ## Supporting Files
 
 - `glossary.md`: key terms (AEH, AltMoC, CBA, COTS, custom device, DAL, ETSO, GM) with chapter references.
