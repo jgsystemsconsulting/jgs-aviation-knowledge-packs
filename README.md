@@ -7,7 +7,7 @@ SPDX-License-Identifier: MIT
 
 <p align="center">
   <img src="https://img.shields.io/badge/license-MIT%20(tooling)-blue" alt="License: MIT (tooling)">
-  <img src="https://img.shields.io/badge/version-0.1.0-green" alt="Version 0.1.0">
+  <img src="https://img.shields.io/badge/version-0.2.0-green" alt="Version 0.2.0">
 </p>
 
 <p align="center">
@@ -18,7 +18,10 @@ SPDX-License-Identifier: MIT
   conformity inspection; the /aviation orchestrator routes free-text sector
   questions to the right pack. This catalogue provides engineering knowledge,
   not legal or regulatory advice; it signposts, but does not reproduce, the
-  paywalled RTCA/EUROCAE/SAE standards; an EASA guidance pack is forthcoming.</strong>
+  paywalled RTCA/EUROCAE/SAE standards; the easa-rules pack distills AMC 20-115D
+  and AMC 20-152A (ED Decision 2017/020/R and ED Decision 2020/010/R, consolidated
+  in AMC-20 Amendment 23) into reference notes on EASA airborne software and
+  airborne electronic hardware means of compliance.</strong>
 </p>
 
 **Copyright (c) 2026 JG Systems Consulting Ltd. - MIT License (tooling); pack content under each source's own licence (see [NOTICE](NOTICE)).**
@@ -28,7 +31,8 @@ SPDX-License-Identifier: MIT
 ## What it is
 
 This repo is an installable catalogue of knowledge-pack skills for coding agents
-that build avionics software and hardware seeking FAA approval. Each pack
+that build avionics software and hardware seeking FAA approval and, in
+easa-rules, EASA means of compliance for the same two topics. Each pack
 distills vetted public sources into reference notes an agent can load on demand,
 and a single orchestrator routes free-text sector questions to the right pack.
 Pack structure follows [docs/PACK-SPEC.md](docs/PACK-SPEC.md); usage guidance

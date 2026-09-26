@@ -35,6 +35,27 @@ Third-party source attributions (one block per shipped content pack)
            the FAA is courtesy, not obligation; the FAA does not endorse this
            pack. See packs/faa-8110-49/LICENSE.
 
+[pack: easa-rules]
+  Source : EASA AMC 20-115D (Airborne Software Development Assurance Using
+           EUROCAE ED-12 and RTCA DO-178), adopted by ED Decision 2017/020/R
+           (19 October 2017) as AMC-20 Amendment 14; EASA AMC 20-152A
+           (Development Assurance for Airborne Electronic Hardware), created
+           by ED Decision 2020/010/R (17 July 2020) as AMC-20 Amendment 19.
+           Consolidated base: AMC-20 Amendment 23 (ED Decision 2022/001/R).
+           Retrieval carrier: EASA Easy Access Rules for AMC-20 (Amendment 23),
+           June 2023 consolidation, not an official publication. Pinned
+           2026-09-26. Titles in packs/easa-rules/LICENSE.
+  Author : European Union Aviation Safety Agency (the 2017 decision footer
+           uses the older name European Aviation Safety Agency)
+  Licence: Per-document. EASA copyright page authorises reproduction with
+           acknowledgement unless otherwise stated. ED Decision PDFs reserve
+           all rights. This pack ships reconstructed notes, not the documents.
+           Pack-level commercial use is not granted.
+  Changes: reconstructed as synthesized reference notes (not a reproduction)
+  Terms  : Not an official EASA text. EASA does not endorse this pack. The
+           European Union does not endorse this pack. See
+           packs/easa-rules/LICENSE.
+
 -----------------------------------------------------------------------------------
 Trademark note: RTCA, EUROCAE, and SAE names, and the designations of their
 standards (e.g. DO-178C, DO-254, ARP4754B / ARP4761A), are referenced by name only to
