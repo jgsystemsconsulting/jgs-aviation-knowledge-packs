@@ -1106,13 +1106,13 @@ jobs:
           # tooling/test_ci_gate.py EMPTY_TREE_PAIR can catch drift the same
           # way ROUTING_MAP_PAIR pins routing literals. Runtime asserts keep
           # the pin values honest inside this self-contained gate.
-          # THRESHOLDS: dict[str, int] = {"Certification Liaison & Oversight": 6, "Software Development Assurance": 2, "Airborne Electronic Hardware": 4}  # live catalogue: name-keyed chapter minimums
-          # EXPECTED_NOTES_COUNT = 12
+          # THRESHOLDS: dict[str, int] = {"Certification Liaison & Oversight": 10, "Software Development Assurance": 5, "Airborne Electronic Hardware": 6}  # live catalogue: name-keyed chapter minimums
+          # EXPECTED_NOTES_COUNT = 21
           # expected_signposts: list[str] = ["avionics-signpost"]
-          THRESHOLDS = {"Certification Liaison & Oversight": 6, "Software Development Assurance": 2, "Airborne Electronic Hardware": 4}
-          EXPECTED_NOTES_COUNT = 12
+          THRESHOLDS = {"Certification Liaison & Oversight": 10, "Software Development Assurance": 5, "Airborne Electronic Hardware": 6}
+          EXPECTED_NOTES_COUNT = 21
           expected_signposts = ["avionics-signpost"]
-          if THRESHOLDS != {"Certification Liaison & Oversight": 6, "Software Development Assurance": 2, "Airborne Electronic Hardware": 4} or EXPECTED_NOTES_COUNT != 12 or list(expected_signposts) != ["avionics-signpost"]:
+          if THRESHOLDS != {"Certification Liaison & Oversight": 10, "Software Development Assurance": 5, "Airborne Electronic Hardware": 6} or EXPECTED_NOTES_COUNT != 21 or list(expected_signposts) != ["avionics-signpost"]:
               print(f"::error::[map-data] live-catalogue constant pin drift "
                     f"(THRESHOLDS={THRESHOLDS!r} EXPECTED_NOTES_COUNT={EXPECTED_NOTES_COUNT!r} "
                     f"expected_signposts={expected_signposts!r})")

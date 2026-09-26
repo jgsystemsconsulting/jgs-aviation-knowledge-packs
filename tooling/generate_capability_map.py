@@ -32,7 +32,7 @@ MAP_PATH = ROOT / "docs" / "capability-pack-map.json"
 MD_PATH = ROOT / "docs" / "capability-pack-map.md"
 
 # Live catalogue: 10 chapters + glossary + cheatsheet.
-EXPECTED_NOTES_COUNT = 12
+EXPECTED_NOTES_COUNT = 21
 
 SUPPORT_SUFFIX = " (support file)"
 MAP_VERSION_RE = re.compile(r"^\d+\.\d+\.\d+$")

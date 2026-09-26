@@ -31,7 +31,7 @@ MAP_VERSION_RE = re.compile(r"^\d+\.\d+\.\d+$")
 GENERATED_ON_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
 # Thresholds resolve by cluster NAME so renames fail loudly (unknown name → non-zero).
-THRESHOLDS: dict[str, int] = {"Certification Liaison & Oversight": 6, "Software Development Assurance": 2, "Airborne Electronic Hardware": 4}  # live catalogue: name-keyed chapter minimums
+THRESHOLDS: dict[str, int] = {"Certification Liaison & Oversight": 10, "Software Development Assurance": 5, "Airborne Electronic Hardware": 6}  # live catalogue: name-keyed chapter minimums
 
 
 def fail(errs: list[str], msg: str) -> None:
