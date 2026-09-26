@@ -61,13 +61,13 @@ Beyond recognising ED-80/DO-254, AMC 20-152A adds objectives-based guidance for 
 - AMC 20-152A applicability and DAL coverage → ch05
 - CBA (circuit board assembly) objectives → ch06
 - COTS devices → ch06
-- COTS intellectual property (IP) in custom devices → ch06
 - Configuration management (software life cycle process) → ch03
+- COTS intellectual property (IP) in custom devices → ch06
 - Custom device development → ch06
 - DAL D (AMC 20-152A use not required) → ch05
 - Decision anchors (ED Decision 2017/020/R, ED Decision 2020/010/R) → ch01
-- ETSO articles and ETSO software → ch01, ch02, ch05
 - ED-12B/DO-178B process reuse for new development → ch03
+- ETSO articles and ETSO software → ch01, ch02, ch05
 - ED-80/DO-254 recognition and supplementation → ch05
 - Error handling at design level (GM3) → ch04
 - GM1 to GM3 (AMC 20-115D general clarification material) → ch04

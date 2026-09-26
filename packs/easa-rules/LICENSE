@@ -60,10 +60,8 @@ states that reproduction is authorised, provided the source is acknowledged,
 unless otherwise stated. The ED Decision 2017/020/R and 2020/010/R PDFs carry
 "All rights reserved" footers and present themselves as proprietary EASA
 publications. The Easy Access Rules AMC-20 compilation (Amendment 23) is
-marked as not an official publication. This file therefore claims no
-blanket grant: each source keeps its own basis, commercial use stays pending a
-per-document determination, and the pack limits itself to reconstructed notes
-with full attribution.
+marked as not an official publication. Each source keeps its own basis, and
+commercial use stays pending a per-document determination.
 
 5. NATURE OF THIS PACK
 ----------------------
@@ -105,7 +103,7 @@ text is reproduced, and none is licensed to this pack:
     slices were read; the compilation is not redistributed.
 -   The full Amendment 23 annex as a standalone redistribution.
 -   The Part-21 Easy Access Rules volume (outside this pack's scope).
--   AMC 20-193 (multi-core processors) and AMC 20-189 (open problem reports):
+-   AMC 20-193 (multi-core processors), AMC 20-189 (open problem reports), and AMC 20-170 (guidance on AI assurance):
     named as pointers only, not covered by this release.
 -   S7 (the wider AMC-20 material beyond the two sections): out of this
     release.
