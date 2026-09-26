@@ -21,7 +21,7 @@ AMC 20-115D is an acceptable means, not the only means, for showing compliance w
 - **What "recognises" means.** The AMC points at the EUROCAE/RTCA documents listed in section 1.b and does not reprint their objectives. Those documents supply life cycle process guidance; this pack names them only.
 - **Supplement inclusion rule.** When the AMC says "ED-12C/DO-178C", the reference already folds in ED-215/DO-330 and the three technique supplements as they apply to the project.
 - **Supporting documents versus primary.** ED-94C/DO-248C clarify the primary guidance through FAQs and discussion papers. They do not replace ED-12C/DO-178C.
-- **Replacement of AMC 20-115C.** Section 3 cancels AMC 20-115C dated 12 September 2013. The D-issue purpose text adds the B-process reuse path and the transition path that the C-issue did not carry in this form.
+- **Replacement of AMC 20-115C.** Section 3 cancels AMC 20-115C dated 12 September 2013. The D-issue purpose text adds the B-process reuse path and the transition path as visible additions over the cancelled C-issue.
 - **Hardware is out of this AMC.** Applicability is software. Airborne electronic hardware questions belong to AMC 20-152A (see ch05).
 
 ## Mental Models
