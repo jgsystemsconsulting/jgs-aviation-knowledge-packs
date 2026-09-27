@@ -3,18 +3,18 @@
   "repository": "jgs-aviation-knowledge-packs",
   "sector_slug": "aviation",
   "scope": "Aviation",
-  "version": "0.2.0",
-  "updated": "2026-09-26",
+  "version": "0.3.0",
+  "updated": "2026-09-27",
   "packs": [
     {
       "slug": "faa-8110-49",
-      "title": "FAA Airborne Software and Hardware Approval Guidance (Order 8110.49A, AC 20-115D, AC 20-152A)",
+      "title": "FAA Airborne Software and Hardware Approval Guidance (Order 8110.49A, AC 20-115D, AC 20-152A, and AC 00-69 Best Practices)",
       "publisher": "U.S. Federal Aviation Administration (AIR); reconstructed by JG Systems Consulting Ltd",
-      "source_version": "Source set pinned 2026-09-25 (documents dated 2017-07-21 to 2022-10-07)",
+      "source_version": "S1 Order 8110.49A (2018-03-29); S2 AC 20-115D (2017-07-21); S3 AC 20-152A (2022-10-07); S4 AC 00-69 (2017-07-21). Pinned 2026-09-27.",
       "license": "Public Domain (US Government work, 17 U.S.C. 105)",
       "license_tier": 1,
       "commercial_use": true,
-      "chapters": 10,
+      "chapters": 13,
       "status": "live"
     },
     {

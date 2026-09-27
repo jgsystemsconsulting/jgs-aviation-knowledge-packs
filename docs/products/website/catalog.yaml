@@ -10,7 +10,7 @@ products:
     name: Aviation Knowledge Packs
     product_class: agent-skills
     status: live
-    version: "0.2.0"
+    version: "0.3.0"
     entry: 01-sector-catalogue.yaml
     tagline: >
       Licence-vetted Aviation knowledge-pack skills for coding agents,
