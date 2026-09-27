@@ -1,7 +1,7 @@
 # Capability to Knowledge-Pack Map
 
 Working artifact mapping sector technical capabilities to the pack chapters that provide
-reference depth for each capability. Live catalogue: faa-8110-49 (10 chapters + glossary + cheatsheet) and easa-rules (7 chapters + glossary + cheatsheet), 21 entries.
+reference depth for each capability. Live catalogue: faa-8110-49 (13 chapters + glossary + cheatsheet) and easa-rules (7 chapters + glossary + cheatsheet), 24 entries.
 
 Rules of construction:
 - Every chapter in every pack under `packs/<slug>/chapters/` is assigned to exactly one capability cluster (best fit).
@@ -15,9 +15,9 @@ Rules of construction:
 | Cluster | Entries |
 |---|---|
 | 1. Certification Liaison & Oversight | 10 |
-| 2. Software Development Assurance | 5 |
+| 2. Software Development Assurance | 8 |
 | 3. Airborne Electronic Hardware | 6 |
-| **Total** | **21** |
+| **Total** | **24** |
 
 ## 1. Certification Liaison & Oversight
 
@@ -40,6 +40,9 @@ Rules of construction:
 |---|---|---|
 | faa-8110-49 | ch05-do-178c-recognition-and-transition.md | AC 20-115D recognition of ED-12C/DO-178C, process reuse, life-cycle data, and tool-qualification transition |
 | faa-8110-49 | ch06-legacy-software-fls-ums.md | Supplements, field-loadable and user-modifiable software, and legacy software modification flow |
+| faa-8110-49 | ch11-software-change-impact-analysis.md | CIA best-practice checklist from AC 00-69 section 3.1: what a change impact analysis identifies and which change classes it addresses |
+| faa-8110-49 | ch12-data-and-control-coupling-practices.md | Data coupling and control coupling are distinct and both required; design-phase interface and dependency specification supports the verification objective |
+| faa-8110-49 | ch13-design-level-error-handling.md | Design-level error handling: foreseeable error sources, mitigation in requirements, runtime protection named for levels A and B |
 | easa-rules | ch02-amc-20-115d-scope.md | AMC 20-115D applicability: product certification, ETSO software, and what replacing AMC 20-115C changed |
 | easa-rules | ch03-software-assurance-115d.md | Software assurance as AMC 20-115D frames it, without a DO-178C objective dump |
 | easa-rules | ch04-transition-tools-gm.md | GM1 to GM3 (CIA, coupling, error handling) and the tool-qualification pointer, name-only |

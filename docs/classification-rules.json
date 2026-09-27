@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "map_version": "0.2.0",
-  "generated_on": "2026-09-26",
+  "generated_on": "2026-09-27",
   "rules_of_construction": [
     "Every chapter in every pack under packs/<slug>/chapters/ is assigned to exactly one capability cluster (best fit).",
     "Cross-cutting chapters carry a remark noting the strong secondary fit.",
@@ -69,6 +69,24 @@
     {
       "pack": "faa-8110-49",
       "chapter": "ch06-legacy-software-fls-ums.md",
+      "cluster": "Software Development Assurance",
+      "is_support": false
+    },
+    {
+      "pack": "faa-8110-49",
+      "chapter": "ch11-software-change-impact-analysis.md",
+      "cluster": "Software Development Assurance",
+      "is_support": false
+    },
+    {
+      "pack": "faa-8110-49",
+      "chapter": "ch12-data-and-control-coupling-practices.md",
+      "cluster": "Software Development Assurance",
+      "is_support": false
+    },
+    {
+      "pack": "faa-8110-49",
+      "chapter": "ch13-design-level-error-handling.md",
       "cluster": "Software Development Assurance",
       "is_support": false
     },
