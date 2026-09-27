@@ -70,7 +70,7 @@ Use in addition to DO-178C section 2.5.2 items a, b, c, and f (or DO-178B sectio
 
 3. **No modification required and criteria 9.b(1)-(2) hold (9.b(3)).** Original approval may serve as the basis for the software in the new installation approval. If you upgraded the baseline fully to DO-178C and DO-330 processes, you may declare software equivalent to satisfying DO-178C, but you cannot declare unmodified tools equivalent to DO-178C/DO-330; all later software and tool changes use the DO-178C/DO-330 processes.
 
-4. **Modifications required (9.b(4)).** Perform software change impact analysis (CIA) for extent, impact, and required verification so modified software still performs its intended function and meets the identified means of compliance. Identify changes; run one or more analyses per DO-178C section 12.1; verify as the CIA indicates; summarize CIA results in the PSAC or SAS.
+4. **Modifications required (9.b(4)).** Perform software change impact analysis (CIA) for extent, impact, and required verification so modified software still performs its intended function and meets the identified means of compliance. Identify changes; run one or more analyses per DO-178C section 12.1; verify as the CIA indicates; summarize CIA results in the PSAC or SAS. AC 00-69 section 3.1 gives the best-practice contents of that analysis; see ch11. It is best practices, not a means of compliance.
 
 5. **New or modified tools (9.b(5)).** Determine qualification needs per section 10 (see ch05).
 
@@ -135,4 +135,6 @@ Use in addition to DO-178C section 2.5.2 items a, b, c, and f (or DO-178B sectio
 - **ch02** - certification liaison and reviews that will examine PSAC/SAS CIA summaries and supplement coverage claims.
 
 - **ch04** - conformity still needs controlled part numbers and load procedures when FLS is the delivery path into the target LRU or aircraft system.
+
+- **ch11** - CIA best-practice checklist that deepens section 9.b(4).
 

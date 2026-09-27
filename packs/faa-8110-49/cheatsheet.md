@@ -53,11 +53,13 @@ Decision rules for FAA airborne software and hardware approval questions. Each r
 - Open safety-related OPRs, service difficulties, or airworthiness directives with no resolution plan block reuse. (ch06)
 - Table 1 decides whether the legacy level satisfies the assigned level; an unacceptable level upgrades the baseline via DO-178C (and DO-330). (ch06)
 - Keeping original-version processes for modifications requires every 9.b(7) condition, and forbids a DO-178C equivalence claim. (ch06)
-- Modified software: run change impact analysis, verify as it indicates, and summarize results in the PSAC or SAS. (ch06)
+- Modified software: run change impact analysis, verify as it indicates, and summarize results in the PSAC or SAS. Best-practice contents of that analysis are in ch11 (AC 00-69), which is best practices, not a means of compliance. (ch06)
 - Equivalence is declared after full process upgrades, and never extends to unmodified tools. (ch06)
 - Supplements attach to techniques, not stand-alone: the PSAC names which objectives from which documents hit which components, and DO-331 MB.6.8.1 simulation substitution needs per-objective justification. (ch06)
 - FLS: developer support data, corruption and partial-load protection, verifiable loaded part number, and inhibit during flight or other safety-critical phases. (ch06)
 - UMS: the modifiable partition is developed at least at the assigned software level. (ch06)
+- Data coupling and control coupling are separate analyses and both are required. (ch12)
+- Design-level error handling: put the mitigation in the requirements; runtime protection is named for levels A and B. (ch13)
 
 ## Custom AEH device: simple or complex? → ch07
 

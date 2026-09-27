@@ -1,12 +1,12 @@
 ---
 name: faa-8110-49
-description: "Reconstructed reference notes on US FAA approval guidance for airborne software and airborne electronic hardware, built from three public-domain sources (FAA Order 8110.49A, AC 20-115D, AC 20-152A; documents dated 2017-07-21 to 2022-10-07, pinned 2026-09-25). Use for how FAA certification staff plan and conduct software reviews (certification liaison, desk versus on-site review, review planning agreements), how the level of FAA involvement (LOI) is picked and scored with the Appendix A worksheets, how software conformity inspection works (software part and installation conformity, ASE and ASI tasks, Form 8120-10), what AC 20-115D recognizes and how DO-178B processes and tool qualification transition to DO-178C/DO-330 (supplements, FLS, UMS, legacy software changes), and what AC 20-152A adds for airborne electronic hardware (simple versus complex custom devices, robustness and HDL code coverage, tool assessment, previously developed hardware, COTS IP, COTS devices, circuit board assemblies). SCOPE LIMITS: FAA guidance only, and guidance is not regulation (ACs are acceptable means, not the only means); no RTCA DO-178C or DO-254, EUROCAE ED-12C or ED-80, supplement, or SAE ARP text, which are copyrighted and named only (see the avionics-signpost pack); no DO-178C software-level objective tables; no EASA AMC 20-115D or AMC 20-152A content (use easa-rules); reflects the pinned source dates, not later FAA actions; synthesized reference notes, not legal advice and not a substitute for the source documents. LICENCE: Public Domain (US Government work, 17 U.S.C. 105)."
+description: "Reconstructed reference notes on US FAA approval guidance for airborne software and airborne electronic hardware, built from four public-domain sources (FAA Order 8110.49A, AC 20-115D, AC 20-152A, AC 00-69; documents dated 2017-07-21 to 2022-10-07, pinned 2026-09-27). Use for how FAA certification staff plan and conduct software reviews (certification liaison, desk versus on-site review, review planning agreements), how the level of FAA involvement (LOI) is picked and scored with the Appendix A worksheets, how software conformity inspection works (software part and installation conformity, ASE and ASI tasks, Form 8120-10), what AC 20-115D recognizes and how DO-178B processes and tool qualification transition to DO-178C/DO-330 (supplements, FLS, UMS, legacy software changes), and what AC 20-152A adds for airborne electronic hardware (simple versus complex custom devices, robustness and HDL code coverage, tool assessment, previously developed hardware, COTS IP, COTS devices, circuit board assemblies), and what AC 00-69 adds as best practices for change impact analysis, data and control coupling, and design-level error handling (best practices, not guidance and not a means of compliance). SCOPE LIMITS: FAA guidance only, and guidance is not regulation (ACs are acceptable means, not the only means); no RTCA DO-178C or DO-254, EUROCAE ED-12C or ED-80, supplement, or SAE ARP text, which are copyrighted and named only (see the avionics-signpost pack); no AC 00-72 (named, not packed); no DO-178C software-level objective tables; no EASA AMC 20-115D or AMC 20-152A content (use easa-rules); reflects the pinned source dates, not later FAA actions; synthesized reference notes, not legal advice and not a substitute for the source documents. LICENCE: Public Domain (US Government work, 17 U.S.C. 105)."
 ---
 
 <!-- argument-hint: [software review, LOI, conformity inspection, DO-178C transition, FLS/UMS, custom device, COTS, chapter number] -->
 
-# FAA Airborne Software and Hardware Approval Guidance (Order 8110.49A, AC 20-115D, AC 20-152A)
-**Source**: U.S. Federal Aviation Administration (AIR), 3-source reference set: Order 8110.49A (2018-03-29), AC 20-115D (2017-07-21), AC 20-152A (2022-10-07); pinned 2026-09-25 | **Licence**: Public Domain (US Government work, 17 U.S.C. 105) | **Chapters**: 10
+# FAA Airborne Software and Hardware Approval Guidance (Order 8110.49A, AC 20-115D, AC 20-152A, and AC 00-69)
+**Source**: U.S. Federal Aviation Administration (AIR), 4-source reference set: Order 8110.49A (2018-03-29), AC 20-115D (2017-07-21), AC 20-152A (2022-10-07), AC 00-69 (2017-07-21); pinned 2026-09-27 | **Licence**: Public Domain (US Government work, 17 U.S.C. 105) | **Chapters**: 13
 
 ## When to use
 
@@ -39,6 +39,9 @@ Conformity confirms the article matches the approved type design (14 CFR 21.33(b
 ### DO-178B to DO-178C transition (AC 20-115D)
 AC 20-115D recognizes ED-12C/DO-178C and describes the standard's method: objectives for life cycle processes, activities that satisfy them, and evidence showing satisfaction. It also defines a **transition path**: applicants with established ED-12B/DO-178B processes may keep using them (including tool qualification processes) for new development where the processes show no known process deficiencies (audits, reviews, open problem reports), were used on a certified product at an equal or higher software level, and, where model-based development, object-oriented technology, or formal methods are involved, were previously found acceptable by the FAA. **Parameter Data Item** configuration data has its own criteria. Life cycle data is submitted to the extent needed to satisfy the applicable objectives, and tool qualification moves to **DO-330** (which supersedes the DO-178B section 12.2 approach, with transition guidance the AC summarizes). Section 8 to 9 material covers **supplement use, field-loadable software (FLS), user-modifiable software (UMS)**, and a legacy software modification flow chart for previously certified software.
 
+### Best practices companion (AC 00-69)
+AC 00-69, issued the same day as AC 20-115D, states that it is best practices and not guidance. It is complementary information to ED-12C/DO-178C and to AC 20-115D. It is not an acceptable means of compliance and it does not replace AC 20-115D. Three blocks: change impact analysis (what a CIA identifies and which change classes it addresses, deepening the 9.b(4) requirement ch06 already states), data coupling and control coupling (distinct analyses, both required), and design-level error handling (foreseeable error sources, mitigated in requirements, runtime protection named for levels A and B). DO-248C FAQ #67 and DO-333 are named only.
+
 ### Airborne electronic hardware: custom devices and the AC 20-152A additions (S3)
 AC 20-152A applies DO-254/ED-80 to **custom devices** and splits them by classification. A **complex custom device** (one whose failure cannot be shown sufficiently by testing alone, in ED-80/DO-254 terms) takes the full standard: ED-80/DO-254 is recognized as the industry standard for its development assurance, plus the AC's additional objectives and clarifications in its sections 5.5 to 5.11. A **simple custom device** can take significantly reduced life cycle data, but two things do not shrink: it must perform its intended function and stay under configuration management, so it can be reproduced, conformed, and analyzed for continued operational safety. The AC then extends the same objective-based style to **verification** (robustness, a stated HDL code coverage method), **tool assessment and qualification**, **previously developed hardware**, **COTS intellectual property** (provider assessment, planning, verification, Appendix B considerations), **COTS devices**, and **circuit board assemblies (CBA)**. Single event effects are explicitly out of the AC's scope. The recognition chain closes the loop: hardware questions route through AC 20-152A exactly as software questions route through AC 20-115D.
 
@@ -58,18 +61,25 @@ AC 20-152A applies DO-254/ED-80 to **custom devices** and splits them by classif
 | 08 | [ch08-aeh-verification-tools-reuse](chapters/ch08-aeh-verification-tools-reuse.md) | S3 secs 5.6-5.10 (pp 8-12; ~4-5 pp) | Robustness, HDL code coverage method, tool assessment and qualification, previously developed hardware, Appendix A clarifications | Airborne Electronic Hardware |
 | 09 | [ch09-aeh-cots-ip](chapters/ch09-aeh-cots-ip.md) | S3 sec 5.11 (pp 12-19; 8 pp) | COTS IP selection, provider assessment, planning, verification, Appendix B considerations for COTS IP | Airborne Electronic Hardware |
 | 10 | [ch10-cots-devices-and-cbas](chapters/ch10-cots-devices-and-cbas.md) | S3 secs 6-7 (pp 19-25 until sec 8; ~6-7 pp) | COTS device applicability and complexity assessment, circuit board assembly development assurance | Airborne Electronic Hardware |
+| 11 | [ch11-software-change-impact-analysis](chapters/ch11-software-change-impact-analysis.md) | S4 sec 3.1 | CIA best-practice checklist: what a change impact analysis identifies and which change classes it addresses | Software Development Assurance |
+| 12 | [ch12-data-and-control-coupling-practices](chapters/ch12-data-and-control-coupling-practices.md) | S4 sec 3.2 | Data coupling and control coupling as distinct, both-required analyses | Software Development Assurance |
+| 13 | [ch13-design-level-error-handling](chapters/ch13-design-level-error-handling.md) | S4 sec 3.3 | Foreseeable error sources, mitigation in requirements, runtime protection at levels A and B | Software Development Assurance |
 
 ## Topic Index
 
+- AC 00-69: best practices companion, not guidance → ch01, ch11, ch12, ch13
 - AC 20-115D: what it recognizes and cancels → ch01, ch05
 - AC 20-152A: scope and additions → ch01, ch07
 - Aviation Safety Engineer (ASE) tasks → ch04
 - Cancellation history (AC 20-115C, AC 20-152, Order 8110.49 Chg 2) → ch01
 - CBA (circuit board assembly) development assurance → ch10
 - Certification liaison process → ch02
+- Change impact analysis checklist → ch11
 - COTS devices → ch10
 - COTS intellectual property (IP) → ch09
+- Data coupling and control coupling → ch12
 - Desk review vs on-site review → ch02
+- Design-level error handling → ch13
 - Designees (DER, ASI, involvement of) → ch02, ch03
 - DO-178B process reuse for new development → ch05
 - DO-254 / ED-80 applicability → ch07
@@ -103,5 +113,6 @@ AC 20-152A applies DO-254/ED-80 to **custom devices** and splits them by classif
 - **FAA scope only.** This pack restates US FAA guidance: Order 8110.49A and ACs 20-115D/20-152A. It carries no RTCA DO-178C or DO-254, EUROCAE ED-12C or ED-80, supplement (DO-330 to DO-333, ED-215 to ED-218), or SAE ARP4754B/ARP4761A text; those standards are copyrighted and are named only. For designations, editions, and where to buy, use the avionics-signpost pack.
 - **No standard internals.** Software-level objective tables (levels A to E), DO-178C annex tables, and DO-254 process details live in the paywalled standards; this pack covers what the FAA documents themselves say about applying them.
 - **EASA not covered.** AMC 20-115D and AMC 20-152A are outside this pack; easa-rules is the pack that answers EASA software and AEH means-of-compliance questions.
+- **AC 00-69 is best practices.** It is not guidance and not a means of compliance. AC 00-72 (AEH best practices) is named and not packed.
 - **Guidance is not regulation.** ACs describe an acceptable means, not the only means, and do not bind the public; orders bind FAA staff, not applicants. Nothing here is legal advice or a substitute for the source documents or your certification authority.
-- **Dates are pinned.** The source set was pinned 2026-09-25 with documents dated 2017-07-21 to 2022-10-07. Later FAA actions, policy changes, and new or revised ACs are out of scope; check the FAA website for current versions before relying on a single requirement.
+- **Dates are pinned.** The source set was pinned 2026-09-27 with documents dated 2017-07-21 to 2022-10-07. Later FAA actions, policy changes, and new or revised ACs are out of scope; check the FAA website for current versions before relying on a single requirement.

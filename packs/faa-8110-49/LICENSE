@@ -1,8 +1,8 @@
 faa-8110-49 pack: content licence
 =================================
 
-This pack is derived from the three US Federal Aviation Administration (FAA)
-documents listed below (S1 to S3 of the source-vetting record). Their landing-
+This pack is derived from the four US Federal Aviation Administration (FAA)
+documents listed below (S1 to S4 of the source-vetting record). Their landing-
 page URLs are held in the build record dated 2026-09-25 and are not reproduced
 here; the repository link policy bans source-material hosts (see
 ../../docs/LICENSING.md).
@@ -10,7 +10,7 @@ here; the repository link policy bans source-material hosts (see
 Source licence: Public Domain (US Government work, 17 U.S.C. 105)  (tier 1; see
 ../../docs/SOURCE-VETTING.md). No source-material download link is published.
 
-All three sources are works of the United States Government prepared by FAA
+All four sources are works of the United States Government prepared by FAA
 staff of the Aircraft Certification Service (AIR), and are NOT subject to
 copyright protection in the United States (17 U.S.C. 105). They are in the
 public domain: anyone may reproduce, transform, and redistribute them for any
@@ -33,7 +33,7 @@ NOTE: This file governs the CONTENT of this pack. The repository tooling is
 licensed separately under MIT (see ../../LICENSE).
 
 
-THE THREE SOURCES
+THE FOUR SOURCES
 =================
 
 S1  FAA Order 8110.49A, Software Approval Guidelines
@@ -87,6 +87,22 @@ S3  AC 20-152A, Development Assurance for Airborne Electronic Hardware
     this pack restates only what the AC itself says.
     Used in: ch01, ch07, ch08, ch09, ch10
 
+S4  AC 00-69, Best Practices for Airborne Software Development Assurance Using
+    EUROCAE ED-12( ) and RTCA DO-178( )
+    Publisher: US DOT Federal Aviation Administration, Aircraft Certification
+    Service (AIR)   Advisory Circular
+    Issued: 2017-07-21   Initiated by: AIR-134   Status: Active
+    Cancellation: none. No prior AC 00-69 is cancelled. Change field blank.
+    Basis: US Government work, 17 U.S.C. 105
+    Reconstructs: the change impact analysis best-practice contents (what a CIA
+    identifies and which change classes it addresses), the clarification that
+    data coupling and control coupling are distinct and both required, and the
+    design-level error-handling practices (foreseeable error sources, mitigation
+    in requirements, runtime protection at levels A and B). The AC states it is
+    best practices, not guidance, and complementary to ED-12C/DO-178C and to
+    AC 20-115D. It is not an acceptable means of compliance.
+    Used in: ch01, ch06 (cross-link), ch11, ch12, ch13
+
 
 EXCLUDED MATERIAL (cited by name only; no text reproduced)
 =========================================================
@@ -108,8 +124,10 @@ objective, or clause wording from any of them.
 -   SAE ARP4754B, "Guidelines for Development of Civil Aircraft and Systems",
     and SAE ARP4761A, "Guidelines for Conducting the Safety Assessment Process
     on Civil Aircraft, Systems, and Equipment".
+-   RTCA DO-248C / EUROCAE ED-94C FAQ #67, and RTCA DO-333 / EUROCAE ED-216.
+    AC 00-69 names both. This pack names them and does not quote them.
 
 Buy these from RTCA, EUROCAE, or SAE as applicable. Their designations,
 titles, and editions are identified in this pack for reference only; see the
 avionics-signpost pack for the full pointer table. The exclusions and the
-cleared status of S1 to S3 are recorded in ../../docs/SOURCE-VETTING.md.
+cleared status of S1 to S4 are recorded in ../../docs/SOURCE-VETTING.md.

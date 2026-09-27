@@ -19,7 +19,7 @@ Three public FAA documents split the airborne software and electronic hardware a
 
 - **Hardware recognition pair (AC 20-152A section 1).** ED-80 (April 2000) / DO-254 (19 April 2000), treated as equivalent. The AC states when to apply them and supplements them with objectives for custom devices (including COTS IP), COTS devices, and CBAs.
 
-- **8110.49 Chg 2 → 8110.49A history.** Order 8110.49A (2018-03-29) cancels and supersedes Order 8110.49 Chg 2 (2017-04-10). Chapters 5-16 from Chg 2 were deleted to remove duplication or conflict; those topics moved to AC 20-115D, to AC 00-69, or were removed. What remains in the order is the software review process (chapter 2), reserved chapter 3, software conformity inspection (chapter 4), and LOI worksheets (Appendix A).
+- **8110.49 Chg 2 → 8110.49A history.** Order 8110.49A (2018-03-29) cancels and supersedes Order 8110.49 Chg 2 (2017-04-10). Chapters 5-16 from Chg 2 were deleted to remove duplication or conflict; those topics moved to AC 20-115D, to AC 00-69, or were removed. What remains in the order is the software review process (chapter 2), reserved chapter 3, software conformity inspection (chapter 4), and LOI worksheets (Appendix A). AC 00-69 is now in this pack (ch11-ch13); it holds three best-practice blocks, not the deleted order chapters.
 
 ## Key Concepts
 
@@ -38,7 +38,7 @@ Three public FAA documents split the airborne software and electronic hardware a
 | COTS IP inside custom devices? | AC 20-152A sec 5.11 | ch09 |
 | Complex COTS semiconductor devices and CBA development assurance? | AC 20-152A secs 6-7 | ch10 |
 | Best-practice companion notes for DO-254 users (named, not unpacked here)? | AC 00-72 | outside this pack |
-| Contributing human-factors software topics formerly in the order? | AC 00-69 | outside this pack |
+| Best-practice notes on change impact analysis, data and control coupling, and design-level error handling? | AC 00-69 | ch11, ch12, ch13 |
 | Designations, editions, and purchase points for paywalled RTCA/EUROCAE/SAE standards? | avionics-signpost pack | signpost |
 
 ### Order 8110.49A in one page
@@ -68,7 +68,7 @@ Three public FAA documents split the airborne software and electronic hardware a
 | Retired text | Disposition |
 |---|---|
 | Order 8110.49 Chg 2 entire order | Superseded by 8110.49A (2018-03-29) |
-| Order 8110.49 Chg 2 Chapters 5-16 | Deleted; topics now in AC 20-115D, AC 00-69, or removed |
+| Order 8110.49 Chg 2 Chapters 5-16 | Deleted; topics now in AC 20-115D, AC 00-69, or removed (AC 00-69 reconstructed in ch11-ch13) |
 | AC 20-115C (2013-07-19) | Cancelled by AC 20-115D |
 | AC 20-152 (2005-06-30) | Cancelled by AC 20-152A |
 
@@ -78,7 +78,7 @@ Practical reading rule: do not cite Chg 2 chapters 5-16 as current FAA order mat
 
 - No verbatim RTCA DO-178C, DO-254, DO-330 to DO-333, EUROCAE ED-12C, ED-80, ED-215 to ED-218, or SAE ARP4754B/ARP4761A text. Those works are copyrighted and paywalled. Designations and where-to-buy orientation live in the **avionics-signpost** pack.
 - No DO-178C Annex A objective tables and no DO-254 life cycle data tables beyond the AC's own clarifications.
-- No EASA AMC 20-115D or AMC 20-152A body text (EASA Easy Access Rules are a separate free corpus; a future EASA pack may cover them).
+- No EASA AMC 20-115D or AMC 20-152A body text. Those questions go to easa-rules. AC 00-69 themes parallel the EASA GM1-GM3 split; this pack does not import that text.
 - Guidance is not regulation. Alternate means remain possible when the FAA accepts them.
 
 ## Mental Models
@@ -117,4 +117,7 @@ Practical reading rule: do not cite Chg 2 chapters 5-16 as current FAA order mat
 - **ch08** - AEH robustness, HDL coverage, tools, PDH, Appendix A clarifications.
 - **ch09** - COTS IP in custom devices.
 - **ch10** - COTS devices and circuit board assemblies.
+- **ch11** - AC 00-69 change impact analysis best practices.
+- **ch12** - AC 00-69 data and control coupling practices.
+- **ch13** - AC 00-69 design-level error handling.
 - **avionics-signpost** - paywalled RTCA/EUROCAE/SAE designations and where to obtain them (no standard text here).
