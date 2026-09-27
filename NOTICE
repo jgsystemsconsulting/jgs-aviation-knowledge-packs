@@ -23,7 +23,9 @@ Third-party source attributions (one block per shipped content pack)
   Source : FAA Order 8110.49A, Software Approval Guidelines + AC 20-115D
            (Airborne Software Development Assurance) + AC 20-152A (RTCA
            Document DO-254, Design Assurance Guidance for Airborne
-           Electronic Hardware)
+           Electronic Hardware) + AC 00-69, Best Practices for Airborne
+           Software Development Assurance Using EUROCAE ED-12( ) and RTCA
+           DO-178( ) (2017-07-21)
   Author : US Federal Aviation Administration (FAA)
   Licence: Public Domain (US Government work, 17 U.S.C. 105)
   Changes: reconstructed as synthesized reference notes (not a reproduction)

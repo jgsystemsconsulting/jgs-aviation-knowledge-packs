@@ -7,14 +7,14 @@ SPDX-License-Identifier: MIT
 
 <p align="center">
   <img src="https://img.shields.io/badge/license-MIT%20(tooling)-blue" alt="License: MIT (tooling)">
-  <img src="https://img.shields.io/badge/version-0.2.0-green" alt="Version 0.2.0">
+  <img src="https://img.shields.io/badge/version-0.3.0-green" alt="Version 0.3.0">
 </p>
 
 <p align="center">
   <strong>An installable catalogue of knowledge-pack skills for coding agents that
-  build aviation software and hardware approvals. The faa-8110-49 pack distills 3
+  build aviation software and hardware approvals. The faa-8110-49 pack distills 4
   FAA sources into reference notes covering the FAA software approval review
-  process (Order 8110.49A), DO-178C/DO-254 development assurance practice, and
+  process (Order 8110.49A, AC 00-69), DO-178C/DO-254 development assurance practice, and
   conformity inspection; the /aviation orchestrator routes free-text sector
   questions to the right pack. This catalogue provides engineering knowledge,
   not legal or regulatory advice; it signposts, but does not reproduce, the

@@ -11,6 +11,12 @@ All notable changes to this project are documented here. Format follows
 
 ## [Unreleased]
 
+## [0.3.0]
+
+### Added
+
+- faa-8110-49 fourth source: AC 00-69, Best Practices for Airborne Software Development Assurance Using EUROCAE ED-12( ) and RTCA DO-178( ) (2017-07-21), as ch11 (change impact analysis), ch12 (data and control coupling), and ch13 (design-level error handling). Best practices, not guidance and not a means of compliance.
+
 ## [0.2.0]
 
 ### Added
